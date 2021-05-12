@@ -1,0 +1,18 @@
+export const elements = {
+//  pin : document.getElementById('pin_btn'),
+//  dis : document.getElementById('dis_btn'),
+//  pinDiv : document.querySelector('.pincode_view'),
+//  disDiv : document.querySelector('.district_view'),
+//  pinForm : document.querySelector('.pin_form'),
+//  disForm : document.querySelector('.dis_form'),
+//  dashBtn : document.querySelector('.dash_btn'),
+//  dashBox : document.getElementById('dashboard'),
+ pincode : document.getElementById('PINCODE'),
+ statename : document.getElementById('STATENAME'),
+ districtname : document.getElementById('DISTRICTNAME'),
+ searchbtndis : document.querySelector('.search-btn-dis'),
+ searchbtnpin : document.querySelector('.search-btn-pin'),
+ tablesection : document.querySelector('.section4'),
+ slotdatarender : document.querySelector('.booking_data'),
+ slotdaterender : document.querySelector('.booking_date'),
+}

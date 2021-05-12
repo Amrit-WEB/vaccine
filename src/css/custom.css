@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#c8faa7;
+    border-radius: 20px;
+}
+
+/**Section1 Start**/
+.logo_name{
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: wheat;
+}
+/**Section1 End**/
+
+/**Section2 Start**/
+.section2 img{
+    width: 100%;
+}
+/**Section2 End**/
+
+/**Section3 Start**/
+.section3{
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*place switcher*/
+.place_switcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    
+}
+.pincode_view{
+    background-color: #48da4e21;
+    padding: 0 100px;
+    border: 1.5px solid green;
+    border-right: none;
+    border-radius: 30px 0px 0px 30px;
+}
+.district_view {
+    background-color: #48da4e21;
+    padding: 0 100px;
+    border: 1.5px solid green;
+    border-left: none;
+    border-radius: 0px 30px 30px 0px;
+}
+
+#pin_btn, #dis_btn{
+    color: green;
+    background-color: transparent;
+    border: none;
+}
+#pin_btn:focus, #dis_btn:focus{
+    color: white;
+    outline: none;
+}
+/*Search-bar*/
+.search_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pin_form,.dis_form{
+    width: 55%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 0.5% 0;
+}
+.pin_form input{
+    width: 70%;
+    padding: 2px 10px;
+    background: none;
+    border: none;
+}
+.pin_form input::-webkit-outer-spin-button,
+.pin_form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pin_form input:focus{
+    outline: none;
+}
+.dis_form select{
+    width: 30%;
+    padding: 2px 10px;
+    background: none;
+    border: none;
+}
+.dis_form select:focus{
+    outline: none;
+}
+.pin_form button,.dis_form button{
+    background: none;
+    border: none;
+}
+.search_bar button:focus{
+    outline: none;
+}
+
+/**Section3 End**/
+
+/**Section4 Start**/
+.section4{
+    display: none;
+    margin: 6% auto;
+}
+.booking_table{
+    border:1px solid grey;
+    border-radius: 4px;
+    height: 600px;
+}
+.booking_date{
+    display: flex;
+    flex-direction: row;
+}
+.day{
+    padding: 0 0px;
+    margin-left: 6%;
+}
+.day span{
+    font-size: 15px;
+}
+.booking_data{
+    margin: 2% auto;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+       
+}
+
+.center_data{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.center_name_css{
+    padding: 15px 0px 0px 15px;
+}
+.center_status{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+.span1_cen_status{
+    color: white;
+    padding: 2px 25px;
+    border: 1px solid green;
+    border-radius: 20px;
+}
+
+/**Section4 End**/
+
+/**Section5 Start**/
+.section5{
+    padding: 2% 0;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.cards{
+    width:220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.cards i{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    font-size: 60px;
+}
+.card_lines{
+    height: 100px;
+    border: 1px solid black;
+}
+
+/**Section5 End**/
+
+/**Section6 Start**/
+.section6{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section6 p{
+    color: white;
+    margin: auto 5px;
+}
+/**Section6 End**/
+
+@media only screen and (max-width: 991px){
+    .section3{
+        height: 50vh;
+    }
+    .pincode_view,.district_view{
+        padding: 4px 80px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    /**Section 3**/
+    .section3{
+        height: 70vh;
+    }
+    .place_switcher{
+        flex-direction: column;
+    }
+    .pincode_view,.district_view{
+        margin: 5px 0;
+        padding: 4px 20px;
+        border: 1.5px solid green;
+        border-radius: 20px;
+    }
+    .pin_form,.dis_form{
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    
+    }
+    .pin_form input{
+        width: 90%;
+        margin: 5px 0;
+        border-bottom: 1px solid black;
+    }
+    .dis_form select{
+        width: 100%;
+        margin: 5px 0;
+        border-bottom: 1px solid black;
+    }
+    /**Section4**/
+    .center_name_css p{
+        display: none;
+    }
+    .center_status{
+        margin-left: 7%;
+    }
+    .day{
+        margin-left: 9%;
+    }
+    .span1_cen_status{
+        padding: 2px 20px;
+    }
+    /**Section 5**/
+    .section5{
+        flex-direction: column;
+    }
+    .card_lines{
+        display: none;
+    }
+    /**Section 6**/
+    .section6{
+        flex-direction: column;
+        height: 100px;
+    }
+  }
+  @media only screen and (max-width: 411px) {
+    .day{
+        margin-left: 14%;
+    }  
+    .center_status{
+        margin-left: 9%;
+    }
+    .span1_cen_status{
+          padding: 2px 15px;
+      }
+  }

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>VACC-Slot || Find Your Vaccine Centre Near You</title>
+    <!--Fontawesome Icon Pack-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-success section1">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+          <img
+            src="./img/vaccine_logo.png"
+            class="navbar-brand"
+            style="width: 35px"
+          />
+          <a href="#" class="navbar-brand logo_name">VACC-Slot</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarcontent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-center" id="navbarcontent">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item">
+                <a href="#home" class="nav-link text-white"
+                  ><i class="fas fa-home"></i> Home</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a href="#dashboard" class="nav-link text-white dash_btn"
+                  ><i class="fas fa-chart-line"></i> Dashboard</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a
+                  href="https://selfregistration.cowin.gov.in/"
+                  class="nav-link text-white"
+                  target="_blank"
+                  ><i class="fas fa-users"></i> Registration</a
+                >
+              </li>
+              <li class="navbar-item">
+                <a href="#search" class="nav-link text-white"
+                  ><i class="fas fa-search"></i> Search</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid section2" id="home">
+      <img src="./img/banner.jpg" alt="banner_vaccine" />
+    </div>
+    <div class="container-fluid section3" id="search">
+      <div class="container text-center text-success">
+        <h3>Check your nearest vaccination center and slots availability</h3>
+      </div>
+      <div class="container place_switcher">
+        <div class="pincode_view">
+          <button class="nav-link font-weight-bolder" id="pin_btn">
+            Search By Pincode
+          </button>
+        </div>
+        <div class="district_view">
+          <button class="nav-link font-weight-bolder" id="dis_btn">
+            Search By District
+          </button>
+        </div>
+      </div>
+      <div class="cotainer search_bar">
+        <div class="pin_form">
+          <input type="number" placeholder="Enter Your PINCODE" id="PINCODE"/>
+          <button class="search-btn search-btn-pin"><i class="fas fa-search text-success"></i></button>
+        </div>
+        <div class="dis_form">
+          <select name="state" id="STATENAME">
+            <option value="0">Select Your State</option>
+          </select>
+          <select name="district" id="DISTRICTNAME">
+            <option value="">Select Your District</option>
+          </select>
+          <button class="search-btn search-btn-dis"><i class="fas fa-search text-success"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid section4" id="table">
+      <div class="container booking_table">
+  
+        <div class="booking_data scrollbar scrollbar-success">
+          <!-- <div class="booking_date bg-light">
+            <div class="col-4"></div>
+            --Idhar current 7days ka Date Aayega Render Hoke---
+          </div> -->
+          
+          <div class="center_data">
+            <div class="center_name col-4">
+              <!-- <h6></h6>
+              <p></p> -->
+            </div>
+            <div class="center_status col-1">
+              <!-- <span></span>
+              <span></span>
+              <span></span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-light section5" id="dashboard">
+      <div class="cards">
+        <i class="far fa-chart-bar text-primary"></i>
+        <div class="card-info text-center">
+          <h5 class="text-primary">1739.14+ Lakh</h5>
+          <p>Total Vaccinations Doses</p>
+        </div>
+      </div>
+      <div class="card_lines"></div>
+      <div class="cards">
+        <i class="fas fa-syringe text-success"></i>
+        <div class="card-info text-center">
+          <h5 class="text-success">1365.87+ Lakh</h5>
+          <p>Dose-1 Vaccinations</p>
+        </div>
+      </div>
+      <div class="card_lines"></div>
+      <div class="cards">
+        <i class="fas fa-syringe text-warning"></i>
+        <div class="card-info text-center">
+          <h5 class="text-warning">373.26+ Lakh</h5>
+          <p>Dose-2 Vaccinations</p>
+        </div>
+      </div>
+      <div class="card_lines"></div>
+      <div class="cards">
+        <i class="fas fa-male text-info"></i>
+        <div class="card-info text-center">
+          <h5 class="text-info">717.39+ Lakh</h5>
+          <p>Total Male Vaccinated</p>
+        </div>
+      </div>
+      <div class="card_lines"></div>
+      <div class="cards">
+        <i class="fas fa-female text-danger"></i>
+        <div class="card-info text-center">
+          <h5 class="text-danger">648.29+ Lakh</h5>
+          <p>Total Female Vaccinated</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-success section6">
+      <p>
+        ©Copyright Reserved 2021 ||
+        <a
+          href="https://linktr.ee/amritanshu/"
+          target="_blank"
+          class="text-light"
+          >Amritanshu Prajapati</a
+        >
+      </p>
+
+      <p>
+        Powered by
+        <a href="https://www.cowin.gov.in/" target="_blank" class="text-warning"
+          >Co-Win</a
+        >
+      </p>
+    </div>
+    
+
+    <!--Custom Javascript For Custom CSS-->
+    <script src="./css/custom.js"></script>
+  </body>
+</html>
